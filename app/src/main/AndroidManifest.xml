@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xebia.philadelphia">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".activity.Philadelphia"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activity.WeatherActivity"
+            android:label="@string/screen_main"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.DetailActivity"
+            android:label="@string/screen_details"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>
